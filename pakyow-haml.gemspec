@@ -16,15 +16,15 @@ Gem::Specification.new do |s|
   s.homepage          = 'http://pakyow.com'
 
   s.files        = Dir[
-                        File.join(presenter_path, 'CHANGES'), 
-                        File.join(presenter_path, 'README'), 
-                        File.join(presenter_path, 'MIT-LICENSE'), 
+                        File.join(presenter_path, 'CHANGES'),
+                        File.join(presenter_path, 'README'),
+                        File.join(presenter_path, 'MIT-LICENSE'),
                         File.join(presenter_path, 'lib','**','*')
                       ]
 
   s.require_path = File.join(presenter_path, 'lib')
-  
-  s.add_dependency('pakyow-core', version)
-  s.add_dependency('pakyow-presenter', version)
+
+  s.add_dependency('pakyow-core', '0.8.rc2')
+  s.add_dependency('pakyow-presenter', '0.8.rc2')
   s.add_dependency('haml', '~> 4.0')
 end
