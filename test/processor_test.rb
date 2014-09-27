@@ -7,7 +7,7 @@ class ProcessorTest < MiniTest::Unit::TestCase
   end
 
   def test_view_is_processed
-    v = View.at_path("/", @view_store)
-    assert_equal "<h1>this should be a header</h1>", v.container(:main)[0].content
+    v = Pakyow.app.presenter.store.composer('/')
+    assert_equal File.read('test/support/processed.html').strip, v.container(:default).to_html.strip
   end
 end

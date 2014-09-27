@@ -5,6 +5,6 @@ $LOAD_PATH.unshift(libdir) unless $LOAD_PATH.include?(libdir)
 require 'haml'
 
 # Processor
-Pakyow::App.processor(:haml) { |content|
+Pakyow::App.processor :haml do |content|
   Haml::Engine.new(content).render
-}
+end
