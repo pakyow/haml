@@ -1,5 +1,7 @@
-pakyow-haml is a Ruby Gem that adds a HAML view processor to a Pakyow app.
+# pakyow/haml
 
-# Usage
+Haml support for [pakyow/presenter](https://github.com/pakyow/pakyow/tree/master/pakyow-presenter).
 
-Add `pakyow-haml` to your Gemfile. Now any view file with a `haml` extension will be processed to HTML automatically.
+## Usage
+
+Add `pakyow-haml` to your `Gemfile`. Any view template with a `haml` file extension will be processed during presentation and rendered as HTML.
