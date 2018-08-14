@@ -2,7 +2,7 @@
 
 require "haml"
 
-require "pakyow/core/framework"
+require "pakyow/framework"
 
 module Pakyow
   module Haml
