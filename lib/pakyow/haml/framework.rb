@@ -1,16 +1,14 @@
 # frozen_string_literal: true
 
-require "haml"
-
 require "pakyow/framework"
+
+require "pakyow/haml/processor"
 
 module Pakyow
   module Haml
     class Framework < Pakyow::Framework(:haml)
       def boot
-        app.processor :haml do |content|
-          ::Haml::Engine.new(content).render
-        end
+        object.state(:processor) << Pakyow::Haml::Processor
       end
     end
   end
